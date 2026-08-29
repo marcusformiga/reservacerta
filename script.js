@@ -64,7 +64,7 @@ async function registrarLead(formulario) {
     return;
   }
 
-  const resposta = await fetch("/", {
+  const resposta = await fetch(formulario.action, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: criarCorpoFormulario(formulario)
