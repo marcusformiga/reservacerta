@@ -26,7 +26,7 @@ function configurarEnvioFormulario(formulario, mensagem) {
   });
 }
 
-function tratarEnvioFormulario(evento, formulario, mensagem) {
+async function tratarEnvioFormulario(evento, formulario, mensagem) {
   evento.preventDefault();
 
   limparMensagem(mensagem);
@@ -37,32 +37,42 @@ function tratarEnvioFormulario(evento, formulario, mensagem) {
     return;
   }
 
-  const lead = coletarDadosFormulario(formulario);
+  const botaoEnvio = formulario.querySelector("[type='submit']");
+  const textoOriginalBotao = botaoEnvio?.textContent;
 
-  registrarLead(lead);
-  exibirSucesso(mensagem);
-  limparFormulario(formulario);
+  try {
+    definirFormularioEnviando(botaoEnvio, true);
+    await registrarLead(formulario);
+    exibirSucesso(mensagem);
+    limparFormulario(formulario);
+  } catch (erro) {
+    console.error("Erro ao capturar lead:", erro);
+    exibirErro(mensagem, "Não foi possível enviar agora. Tente novamente em instantes.");
+  } finally {
+    definirFormularioEnviando(botaoEnvio, false, textoOriginalBotao);
+  }
 }
 
-function coletarDadosFormulario(formulario) {
+function criarCorpoFormulario(formulario) {
   const dados = new FormData(formulario);
-
-  return {
-    nome: normalizarTexto(dados.get("nome")),
-    whatsapp: normalizarTexto(dados.get("whatsapp")),
-    empresa: normalizarTexto(dados.get("empresa")),
-    segmento: normalizarTexto(dados.get("segmento")),
-    volume: normalizarTexto(dados.get("volume")),
-    controle: normalizarTexto(dados.get("controle"))
-  };
+  return new URLSearchParams(dados).toString();
 }
 
-function normalizarTexto(valor) {
-  return String(valor ?? "").trim();
-}
+async function registrarLead(formulario) {
+  if (window.location.protocol === "file:") {
+    console.info("Lead capturado localmente:", Object.fromEntries(new FormData(formulario)));
+    return;
+  }
 
-function registrarLead(lead) {
-  console.info("Lead capturado:", lead);
+  const resposta = await fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: criarCorpoFormulario(formulario)
+  });
+
+  if (!resposta.ok) {
+    throw new Error(`Falha no envio: ${resposta.status}`);
+  }
 }
 
 function exibirErro(elemento, texto) {
@@ -82,4 +92,14 @@ function limparMensagem(elemento) {
 
 function limparFormulario(formulario) {
   formulario.reset();
+}
+
+function definirFormularioEnviando(botao, enviando, textoOriginal = "") {
+  if (!botao) {
+    return;
+  }
+
+  botao.disabled = enviando;
+  botao.setAttribute("aria-busy", String(enviando));
+  botao.textContent = enviando ? "Enviando..." : textoOriginal;
 }

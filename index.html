@@ -259,7 +259,25 @@
           </ul>
         </div>
 
-        <form class="formulario" id="formulario-lead" novalidate>
+        <form
+          class="formulario"
+          id="formulario-lead"
+          name="lead"
+          method="POST"
+          action="/"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          novalidate
+        >
+          <input type="hidden" name="form-name" value="lead">
+
+          <p class="campo-escondido" aria-hidden="true">
+            <label>
+              Não preencha este campo
+              <input name="bot-field" tabindex="-1" autocomplete="off">
+            </label>
+          </p>
+
           <div class="grade grade--duas-colunas">
             <div class="campo">
               <label for="nome">Nome</label>
