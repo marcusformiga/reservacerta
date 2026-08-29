@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Controle reservas, disponibilidade, entregas e devoluções da sua locadora de festas em um único lugar."
+  >
+  <title>ReservaCerta | Gestão de locações sem conflitos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho__conteudo">
+      <a class="marca" href="#inicio" aria-label="Ir para o início">
+        Reserva<span>Certa</span>
+      </a>
+
+      <nav class="navegacao" aria-label="Navegação principal">
+        <a href="#problema">Problema</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#publico">Para quem é</a>
+        <a class="botao botao--primario" href="#acesso-antecipado">
+          Quero testar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao destaque" id="inicio">
+      <div class="container grade grade--duas-colunas destaque__conteudo">
+        <div>
+          <p class="etiqueta">Feito para locadoras de festas e eventos</p>
+
+          <h1>
+            Nunca mais aceite uma locação sem saber se o item está disponível.
+          </h1>
+
+          <p class="texto-destaque">
+            Controle reservas, disponibilidade, entregas e devoluções em um único
+            lugar — sem depender de planilhas, papel ou memória.
+          </p>
+
+          <div class="acoes">
+            <a class="botao botao--primario" href="#acesso-antecipado">
+              Participar do acesso antecipado
+            </a>
+
+            <a class="botao botao--secundario" href="#como-funciona">
+              Ver como funciona
+            </a>
+          </div>
+
+          <ul class="lista-beneficios" aria-label="Benefícios do acesso antecipado">
+            <li>Sem cartão de crédito</li>
+            <li>Grupo piloto limitado</li>
+            <li>Feito com feedback de locadoras</li>
+          </ul>
+        </div>
+
+        <aside class="painel" aria-label="Exemplo de disponibilidade">
+          <div class="painel__cabecalho">
+            <strong>Disponibilidade — Sábado, 14/11</strong>
+          </div>
+
+          <article class="cartao">
+            <p class="texto-suave">Pedido #1028 · Casamento</p>
+
+            <div class="linha linha--espacada">
+              <div>
+                <h2 class="titulo-menor">80 cadeiras Tiffany</h2>
+                <p class="texto-suave">18h às 23h · Bairro Manaíra</p>
+              </div>
+
+              <span class="status status--sucesso">Disponível</span>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <p class="texto-suave">Conflito detectado</p>
+
+            <div class="linha linha--espacada">
+              <div>
+                <h2 class="titulo-menor">10 mesas redondas</h2>
+                <p class="texto-suave">Apenas 6 livres para o período</p>
+              </div>
+
+              <span class="status status--alerta">Atenção</span>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="secao" id="problema">
+      <div class="container">
+        <p class="etiqueta">O problema</p>
+
+        <h2>WhatsApp vende. Planilha tenta acompanhar.</h2>
+
+        <p class="texto-destaque">
+          Quando o volume cresce, consultar disponibilidade, lembrar devoluções e
+          evitar reservas duplicadas começa a depender demais de processos manuais.
+        </p>
+
+        <div class="grade grade--tres-colunas espacamento-superior">
+          <article class="cartao">
+            <span class="icone" aria-hidden="true">📊</span>
+            <h3>Planilhas espalhadas</h3>
+            <p>
+              Reservas, estoque e clientes ficam em arquivos diferentes e rapidamente
+              perdem confiabilidade.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <span class="icone" aria-hidden="true">⚠️</span>
+            <h3>Reserva duplicada</h3>
+            <p>
+              Você promete um item e só depois descobre que ele já estava comprometido.
+            </p>
+          </article>
+
+          <article class="cartao">
+            <span class="icone" aria-hidden="true">🚚</span>
+            <h3>Operação no improviso</h3>
+            <p>
+              Entregas, retiradas e devoluções dependem de mensagens antigas e memória.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--clara" id="como-funciona">
+      <div class="container">
+        <p class="etiqueta">Como funciona</p>
+
+        <h2>Da consulta à devolução, sem perder o controle.</h2>
+
+        <p class="texto-destaque">
+          O fluxo acompanha a forma como uma locadora realmente trabalha.
+        </p>
+
+        <ol class="fluxo espacamento-superior">
+          <li>Cliente</li>
+          <li>Orçamento</li>
+          <li>Reserva</li>
+          <li>Entrega</li>
+          <li>Devolução</li>
+        </ol>
+
+        <div class="grade grade--tres-colunas espacamento-superior">
+          <article class="cartao">
+            <span class="icone" aria-hidden="true">📅</span>
+            <h3>Calendário de reservas</h3>
+            <p>Veja o que sai, volta e está reservado em cada período.</p>
+          </article>
+
+          <article class="cartao">
+            <span class="icone" aria-hidden="true">📦</span>
+            <h3>Disponibilidade real</h3>
+            <p>Saiba quantas unidades estarão livres antes de confirmar o pedido.</p>
+          </article>
+
+          <article class="cartao">
+            <span class="icone" aria-hidden="true">🧾</span>
+            <h3>Orçamentos</h3>
+            <p>Transforme uma consulta em orçamento e depois em reserva.</p>
+          </article>
+
+          <article class="cartao">
+            <span class="icone" aria-hidden="true">🔁</span>
+            <h3>Entregas e devoluções</h3>
+            <p>Acompanhe itens em trânsito e o que precisa retornar ao estoque.</p>
+          </article>
+
+          <article class="cartao">
+            <span class="icone" aria-hidden="true">💬</span>
+            <h3>WhatsApp</h3>
+            <p>Organize o atendimento sem abandonar o principal canal do cliente.</p>
+          </article>
+
+          <article class="cartao">
+            <span class="icone" aria-hidden="true">🔔</span>
+            <h3>Alertas de conflito</h3>
+            <p>Antecipe problemas antes que eles afetem outra reserva.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="chamada">
+          <div>
+            <p class="etiqueta etiqueta--clara">A pergunta central</p>
+
+            <h2>“Eu posso aceitar essa reserva?”</h2>
+
+            <p>
+              O ReservaCerta nasce para responder essa pergunta com segurança antes
+              que você confirme qualquer pedido.
+            </p>
+          </div>
+
+          <article class="chamada__destaque">
+            <p class="texto-suave texto-suave--claro">Pedido para sábado</p>
+            <strong>80 cadeiras</strong>
+            <p>80 disponíveis · sem conflito com reservas existentes</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="publico">
+      <div class="container">
+        <p class="etiqueta">Para quem estamos construindo</p>
+
+        <h2>Feito para quem vive de locação.</h2>
+
+        <p class="texto-destaque">
+          Começamos por festas e eventos, com foco em operações onde disponibilidade
+          por data é crítica.
+        </p>
+
+        <ul class="grade grade--quatro-colunas lista-nichos espacamento-superior">
+          <li>Mesas e cadeiras</li>
+          <li>Brinquedos e infláveis</li>
+          <li>Decoração</li>
+          <li>Som e iluminação</li>
+          <li>Tendas e estruturas</li>
+          <li>Louças e utensílios</li>
+          <li>Mobiliário para eventos</li>
+          <li>Equipamentos diversos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao secao--clara" id="acesso-antecipado">
+      <div class="container grade grade--duas-colunas bloco-formulario">
+        <div>
+          <p class="etiqueta">Acesso antecipado</p>
+
+          <h2>Ajude a construir a primeira versão.</h2>
+
+          <p class="texto-destaque">
+            Estamos selecionando donos e gestores de locadoras para testar o produto
+            e ajudar a definir as próximas funcionalidades.
+          </p>
+
+          <ul class="lista-beneficios lista-beneficios--vertical">
+            <li>Acesso gratuito ao piloto</li>
+            <li>Contato direto com o time do produto</li>
+            <li>Condições especiais no lançamento</li>
+          </ul>
+        </div>
+
+        <form class="formulario" id="formulario-lead" novalidate>
+          <div class="grade grade--duas-colunas">
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required>
+            </div>
+
+            <div class="campo">
+              <label for="whatsapp">WhatsApp</label>
+              <input
+                id="whatsapp"
+                name="whatsapp"
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="(83) 99999-9999"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="empresa">Nome da empresa</label>
+            <input id="empresa" name="empresa" type="text" autocomplete="organization" required>
+          </div>
+
+          <div class="campo">
+            <label for="segmento">O que você aluga?</label>
+            <input
+              id="segmento"
+              name="segmento"
+              type="text"
+              placeholder="Ex.: mesas, cadeiras e brinquedos"
+              required
+            >
+          </div>
+
+          <div class="grade grade--duas-colunas">
+            <div class="campo">
+              <label for="volume">Locações por mês</label>
+              <select id="volume" name="volume" required>
+                <option value="">Selecione</option>
+                <option value="menos-de-10">Menos de 10</option>
+                <option value="10-a-30">10 a 30</option>
+                <option value="31-a-100">31 a 100</option>
+                <option value="mais-de-100">Mais de 100</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="controle">Como controla hoje?</label>
+              <select id="controle" name="controle" required>
+                <option value="">Selecione</option>
+                <option value="excel">Excel</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="agenda-papel">Agenda / papel</option>
+                <option value="software">Software de gestão</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="mensagem-formulario" id="mensagem-formulario" aria-live="polite" role="status"></p>
+
+          <button class="botao botao--primario botao--bloco" type="submit">
+            Quero testar a plataforma
+          </button>
+
+          <small class="texto-suave">
+            Sem compromisso. Seus dados serão usados apenas para contato sobre o
+            acesso antecipado.
+          </small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>
+        <strong>ReservaCerta</strong> · Gestão simples de locações para quem precisa
+        saber o que está disponível, quando e para quem.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
