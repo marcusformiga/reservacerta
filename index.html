@@ -22,6 +22,7 @@
         <a href="#problema">Problema</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#publico">Para quem é</a>
+        <a href="#produto">Produto</a>
         <a class="botao botao--primario" href="#acesso-antecipado">
           Quero testar
         </a>
@@ -40,8 +41,8 @@
           </h1>
 
           <p class="texto-destaque">
-            Controle reservas, disponibilidade, entregas e devoluções em um único
-            lugar — sem depender de planilhas, papel ou memória.
+            Uma tela para conferir estoque por data, travar reservas e enxergar o
+            que sai e volta antes de prometer para o cliente.
           </p>
 
           <div class="acoes">
@@ -61,26 +62,33 @@
           </ul>
         </div>
 
-        <aside class="painel" aria-label="Exemplo de disponibilidade">
+        <aside class="painel painel-disponibilidade" aria-label="Exemplo de disponibilidade">
           <div class="painel__cabecalho">
-            <strong>Disponibilidade — Sábado, 14/11</strong>
+            <span>Mapa de sábado</span>
+            <strong>14 nov · 3 eventos</strong>
           </div>
 
-          <article class="cartao">
-            <p class="texto-suave">Pedido #1028 · Casamento</p>
+          <div class="trilha-tempo" aria-label="Linha de horários do dia">
+            <span>08h retirada</span>
+            <span>14h montagem</span>
+            <span>23h retorno</span>
+          </div>
+
+          <article class="cartao cartao--ok">
+            <p class="texto-suave">Pedido #1028 · Casamento · Manaíra</p>
 
             <div class="linha linha--espacada">
               <div>
                 <h2 class="titulo-menor">80 cadeiras Tiffany</h2>
-                <p class="texto-suave">18h às 23h · Bairro Manaíra</p>
+                <p class="texto-suave">120 no estoque · 40 já reservadas</p>
               </div>
 
               <span class="status status--sucesso">Disponível</span>
             </div>
           </article>
 
-          <article class="cartao">
-            <p class="texto-suave">Conflito detectado</p>
+          <article class="cartao cartao--alerta">
+            <p class="texto-suave">Conflito detectado · Pedido #1031</p>
 
             <div class="linha linha--espacada">
               <div>
@@ -108,7 +116,7 @@
 
         <div class="grade grade--tres-colunas espacamento-superior">
           <article class="cartao">
-            <span class="icone" aria-hidden="true">📊</span>
+            <span class="icone" aria-hidden="true">XL</span>
             <h3>Planilhas espalhadas</h3>
             <p>
               Reservas, estoque e clientes ficam em arquivos diferentes e rapidamente
@@ -117,7 +125,7 @@
           </article>
 
           <article class="cartao">
-            <span class="icone" aria-hidden="true">⚠️</span>
+            <span class="icone" aria-hidden="true">!!</span>
             <h3>Reserva duplicada</h3>
             <p>
               Você promete um item e só depois descobre que ele já estava comprometido.
@@ -125,7 +133,7 @@
           </article>
 
           <article class="cartao">
-            <span class="icone" aria-hidden="true">🚚</span>
+            <span class="icone" aria-hidden="true">RT</span>
             <h3>Operação no improviso</h3>
             <p>
               Entregas, retiradas e devoluções dependem de mensagens antigas e memória.
@@ -155,37 +163,37 @@
 
         <div class="grade grade--tres-colunas espacamento-superior">
           <article class="cartao">
-            <span class="icone" aria-hidden="true">📅</span>
+            <span class="icone" aria-hidden="true">DT</span>
             <h3>Calendário de reservas</h3>
             <p>Veja o que sai, volta e está reservado em cada período.</p>
           </article>
 
           <article class="cartao">
-            <span class="icone" aria-hidden="true">📦</span>
+            <span class="icone" aria-hidden="true">ST</span>
             <h3>Disponibilidade real</h3>
             <p>Saiba quantas unidades estarão livres antes de confirmar o pedido.</p>
           </article>
 
           <article class="cartao">
-            <span class="icone" aria-hidden="true">🧾</span>
+            <span class="icone" aria-hidden="true">OR</span>
             <h3>Orçamentos</h3>
             <p>Transforme uma consulta em orçamento e depois em reserva.</p>
           </article>
 
           <article class="cartao">
-            <span class="icone" aria-hidden="true">🔁</span>
+            <span class="icone" aria-hidden="true">DV</span>
             <h3>Entregas e devoluções</h3>
             <p>Acompanhe itens em trânsito e o que precisa retornar ao estoque.</p>
           </article>
 
           <article class="cartao">
-            <span class="icone" aria-hidden="true">💬</span>
+            <span class="icone" aria-hidden="true">WA</span>
             <h3>WhatsApp</h3>
             <p>Organize o atendimento sem abandonar o principal canal do cliente.</p>
           </article>
 
           <article class="cartao">
-            <span class="icone" aria-hidden="true">🔔</span>
+            <span class="icone" aria-hidden="true">CF</span>
             <h3>Alertas de conflito</h3>
             <p>Antecipe problemas antes que eles afetem outra reserva.</p>
           </article>
@@ -237,6 +245,226 @@
           <li>Mobiliário para eventos</li>
           <li>Equipamentos diversos</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="secao secao--produto" id="produto">
+      <div class="container">
+        <div class="cabecalho-secao">
+          <div>
+            <p class="etiqueta etiqueta--clara">Por dentro da plataforma</p>
+
+            <h2>Prints conceituais da rotina no ReservaCerta.</h2>
+          </div>
+
+          <p class="texto-destaque texto-destaque--claro">
+            Estes mockups mostram a direção do produto: consultar disponibilidade,
+            confirmar reservas e acompanhar a operação sem trocar de ferramenta.
+          </p>
+        </div>
+
+        <div class="carrossel-produto" aria-label="Mockups da plataforma">
+          <div class="carrossel-produto__topo">
+            <div>
+              <strong>Visão do usuário</strong>
+              <span id="carrossel-contador">1 de 3</span>
+            </div>
+
+            <div class="carrossel-produto__controles">
+              <button type="button" class="controle-carrossel" data-carrossel-anterior aria-label="Mockup anterior">
+                ‹
+              </button>
+              <button type="button" class="controle-carrossel" data-carrossel-proximo aria-label="Próximo mockup">
+                ›
+              </button>
+            </div>
+          </div>
+
+          <div class="carrossel-produto__janela">
+            <div class="carrossel-produto__trilho" data-carrossel-trilho>
+              <article class="slide-produto" aria-roledescription="slide" aria-label="1 de 3">
+                <div class="mockup-app mockup-app--agenda">
+                  <aside class="mockup-app__menu" aria-label="Menu lateral do aplicativo">
+                    <strong>ReservaCerta</strong>
+                    <span class="menu-ativo">Agenda</span>
+                    <span>Reservas</span>
+                    <span>Estoque</span>
+                    <span>Entregas</span>
+                  </aside>
+
+                  <div class="mockup-app__conteudo">
+                    <header class="mockup-app__barra">
+                      <div>
+                        <span>Hoje</span>
+                        <strong>Sábado, 14 nov</strong>
+                      </div>
+                      <button type="button">Nova reserva</button>
+                    </header>
+
+                    <div class="mockup-grade mockup-grade--agenda">
+                      <section class="mockup-card mockup-card--principal">
+                        <div class="mockup-card__cabecalho">
+                          <span>Mapa do dia</span>
+                          <strong>3 eventos ativos</strong>
+                        </div>
+
+                        <div class="agenda-linhas">
+                          <div>
+                            <span>08h</span>
+                            <strong>Retirada para buffet Aurora</strong>
+                            <em>120 cadeiras · 16 mesas</em>
+                          </div>
+                          <div>
+                            <span>14h</span>
+                            <strong>Montagem no salão Jardins</strong>
+                            <em>80 cadeiras Tiffany · sem conflito</em>
+                          </div>
+                          <div class="linha-conflito">
+                            <span>16h</span>
+                            <strong>Pedido aguardando confirmação</strong>
+                            <em>Faltam 4 mesas redondas</em>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="mockup-card">
+                        <span class="mockup-kpi">80</span>
+                        <strong>Cadeiras livres</strong>
+                        <p>Para o período de 18h a 23h.</p>
+                      </section>
+
+                      <section class="mockup-card mockup-card--alerta">
+                        <span class="mockup-kpi">4</span>
+                        <strong>Itens em risco</strong>
+                        <p>Conflitos antes de confirmar.</p>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="slide-produto" aria-roledescription="slide" aria-label="2 de 3">
+                <div class="mockup-app mockup-app--reserva">
+                  <aside class="mockup-app__menu" aria-label="Menu lateral do aplicativo">
+                    <strong>ReservaCerta</strong>
+                    <span>Agenda</span>
+                    <span class="menu-ativo">Reservas</span>
+                    <span>Estoque</span>
+                    <span>Clientes</span>
+                  </aside>
+
+                  <div class="mockup-app__conteudo">
+                    <header class="mockup-app__barra">
+                      <div>
+                        <span>Pedido #1034</span>
+                        <strong>Orçamento para casamento</strong>
+                      </div>
+                      <button type="button">Confirmar reserva</button>
+                    </header>
+
+                    <div class="mockup-grade mockup-grade--reserva">
+                      <section class="mockup-card mockup-forma">
+                        <label>Cliente</label>
+                        <div class="campo-falso">Marina Albuquerque</div>
+                        <label>Data do evento</label>
+                        <div class="campo-falso">14/11 · 18h às 23h</div>
+                        <label>Endereço</label>
+                        <div class="campo-falso">Manaíra · João Pessoa</div>
+                      </section>
+
+                      <section class="mockup-card mockup-card--principal">
+                        <div class="mockup-card__cabecalho">
+                          <span>Itens solicitados</span>
+                          <strong>R$ 2.840</strong>
+                        </div>
+
+                        <div class="tabela-falsa">
+                          <div>
+                            <span>80</span>
+                            <strong>Cadeiras Tiffany</strong>
+                            <em class="ok">Disponível</em>
+                          </div>
+                          <div>
+                            <span>10</span>
+                            <strong>Mesas redondas</strong>
+                            <em class="risco">6 livres</em>
+                          </div>
+                          <div>
+                            <span>1</span>
+                            <strong>Kit iluminação</strong>
+                            <em class="ok">Disponível</em>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="slide-produto" aria-roledescription="slide" aria-label="3 de 3">
+                <div class="mockup-app mockup-app--entrega">
+                  <aside class="mockup-app__menu" aria-label="Menu lateral do aplicativo">
+                    <strong>ReservaCerta</strong>
+                    <span>Agenda</span>
+                    <span>Reservas</span>
+                    <span class="menu-ativo">Entregas</span>
+                    <span>Devoluções</span>
+                  </aside>
+
+                  <div class="mockup-app__conteudo">
+                    <header class="mockup-app__barra">
+                      <div>
+                        <span>Operação</span>
+                        <strong>Saídas e retornos</strong>
+                      </div>
+                      <button type="button">Ver rotas</button>
+                    </header>
+
+                    <div class="mockup-kanban">
+                      <section>
+                        <h3>A separar</h3>
+                        <article>
+                          <strong>Buffet Aurora</strong>
+                          <span>120 cadeiras · 16 mesas</span>
+                        </article>
+                        <article>
+                          <strong>Salão Jardins</strong>
+                          <span>80 cadeiras · 10 mesas</span>
+                        </article>
+                      </section>
+
+                      <section>
+                        <h3>Em entrega</h3>
+                        <article>
+                          <strong>Casa Branca Eventos</strong>
+                          <span>Tenda 6x6 · som completo</span>
+                        </article>
+                      </section>
+
+                      <section>
+                        <h3>Retornar</h3>
+                        <article>
+                          <strong>Festa Infantil Luma</strong>
+                          <span>Inflável · 20 mesas infantis</span>
+                        </article>
+                        <article class="item-alerta">
+                          <strong>Praia Hall</strong>
+                          <span>Retorno atrasado desde 09h</span>
+                        </article>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carrossel-produto__pontos" role="tablist" aria-label="Selecionar mockup">
+            <button type="button" class="ponto-carrossel ponto-carrossel--ativo" data-carrossel-ponto="0" aria-label="Mostrar visão da agenda"></button>
+            <button type="button" class="ponto-carrossel" data-carrossel-ponto="1" aria-label="Mostrar visão de reserva"></button>
+            <button type="button" class="ponto-carrossel" data-carrossel-ponto="2" aria-label="Mostrar visão de entregas"></button>
+          </div>
+        </div>
       </div>
     </section>
 
