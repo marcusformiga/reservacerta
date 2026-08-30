@@ -108,6 +108,17 @@ Abra `index.html` diretamente no navegador.
 
 Tambem e possivel usar uma extensao como Live Server no VS Code.
 
+## Deploy no Netlify
+
+O repositorio publica automaticamente uma nova versao de producao no Netlify a cada `push` na branch `main`.
+
+Para o workflow funcionar, configure estes secrets no GitHub em `Settings > Secrets and variables > Actions`:
+
+- `NETLIFY_AUTH_TOKEN`: token de acesso pessoal do Netlify;
+- `NETLIFY_SITE_ID`: ID do site no Netlify.
+
+Como o projeto e estatico, o deploy publica a raiz do repositorio sem etapa de build.
+
 ## Formulario de leads
 
 O formulario esta preparado para captura via Netlify Forms. Ao publicar no Netlify, a plataforma detecta o formulario `lead` no HTML e armazena os envios no painel do site.

@@ -1010,6 +1010,36 @@ h3 {
   align-items: start;
 }
 
+.sinais-piloto {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.4rem 0;
+}
+
+.sinais-piloto div {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(18, 49, 43, 0.16);
+  border-left: 0.35rem solid var(--cor-destaque);
+  border-radius: var(--raio);
+  background: rgba(255, 253, 247, 0.68);
+}
+
+.sinais-piloto dt {
+  color: var(--cor-primaria);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.sinais-piloto dd {
+  margin: 0;
+  color: var(--cor-texto-suave);
+  font-size: 0.92rem;
+}
+
 .formulario {
   display: grid;
   gap: 1rem;
@@ -1191,6 +1221,10 @@ h3 {
 
   .bloco-formulario {
     padding: 1.5rem;
+  }
+
+  .sinais-piloto {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .cabecalho-secao {
